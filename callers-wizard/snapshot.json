@@ -1,0 +1,585 @@
+{
+    "timestamp": 1750513168.9844449,
+    "devices": [
+        {
+            "id": "eb290a79e676104757432d",
+            "ip": "192.168.10.15",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N18",
+            "key": "Txvrk=}p!qq0r:c=",
+            "mac": "18:de:50:df:54:cc",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eb032700e2af6cef7bmaqh",
+            "ip": "192.168.10.21",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N17",
+            "key": "@W9pQ+uhW@eWOQov",
+            "mac": "18:de:50:df:55:a6",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eba3ea53f05d39ec4bi988",
+            "ip": "192.168.10.20",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N19",
+            "key": "M$0&:k]2E:bB(g[2",
+            "mac": "18:de:50:df:50:ca",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "ebe6ca2f1e66d57cb6bapc",
+            "ip": "192.168.10.3",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N08",
+            "key": "/W<!;fiJD)XB_pA$",
+            "mac": "18:de:50:df:70:1c",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "ebae1f3a38e9d7b9ad9ov4",
+            "ip": "192.168.10.11",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N11",
+            "key": "nPGJkL*cyOqfyeEJ",
+            "mac": "18:de:50:df:51:27",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "ebece03d4e99fccfaaqzkh",
+            "ip": "192.168.10.9",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N09",
+            "key": "}|8Gq.TE`x5_X0{J",
+            "mac": "18:de:50:df:50:d2",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eb82c384a4f7896737ytjk",
+            "ip": "192.168.10.8",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N14",
+            "key": "c}T[uG(TBkaHBl0!",
+            "mac": "18:de:50:df:51:13",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "ebc735cb2e72a0cf7eh1sv",
+            "ip": "192.168.10.4",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N02",
+            "key": "Wg;JkLNJY{Wk0E6t",
+            "mac": "18:de:50:d9:f0:08",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": true,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eba19a1b9a3ae2b5admsnc",
+            "ip": "192.168.10.16",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N01",
+            "key": "QPh`4!w{FXb`|B.b",
+            "mac": "18:de:50:df:51:01",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eb272092da4a1cf9143y3y",
+            "ip": "192.168.10.7",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N12",
+            "key": "EJUIr{4:W3fM9OXz",
+            "mac": "18:de:50:df:50:a5",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eb7b9e40a4e66cddf3nuyu",
+            "ip": "192.168.10.6",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N20",
+            "key": "POeo]Zz._Y'lo5;w",
+            "mac": "18:de:50:df:50:cb",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eb573b56fb709c3e4dopoy",
+            "ip": "192.168.10.14",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N03",
+            "key": "R/0<f2NiR<LvWj)w",
+            "mac": "18:de:50:df:51:1d",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eb5097c7bef70ad335qex8",
+            "ip": "192.168.10.17",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N04",
+            "key": "m|.J(freqR}4Z{L6",
+            "mac": "18:de:50:df:51:1f",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "ebb5c635a60702d522vvpp",
+            "ip": "192.168.10.10",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N05",
+            "key": "^tl<R:``#N3(wTE$",
+            "mac": "18:de:50:df:55:40",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eb110f3ad8904120b1rif8",
+            "ip": "192.168.10.5",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N10",
+            "key": "&6y]QqZ(SnAt.}A+",
+            "mac": "18:de:50:df:50:c6",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": true,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "ebb8309fc9ec2b0051fgix",
+            "ip": "192.168.10.13",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N16",
+            "key": "!wF#BU}ux`|rSja]",
+            "mac": "18:de:50:df:55:b0",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eb6613e0b92c0e84c4bpek",
+            "ip": "192.168.10.18",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N07",
+            "key": "86<s?#3!aG76}_K~",
+            "mac": "18:de:50:d9:f0:32",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "eb16981e7e847efc65x4o5",
+            "ip": "192.168.10.19",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N15",
+            "key": "!<|NHqDhSe?`&22~",
+            "mac": "18:de:50:df:50:c2",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "ebe3677bd887981b7fan4g",
+            "ip": "192.168.10.2",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N13",
+            "key": "VTgb]9o$2=&LpLFl",
+            "mac": "18:de:50:df:50:b2",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        },
+        {
+            "id": "ebfa1511cbb8310c752qwb",
+            "ip": "192.168.10.12",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "keyjnuy4s3kre7m7",
+            "token": true,
+            "wf_cfg": true,
+            "name": "N06",
+            "key": "TjLpXR+&lu.?gLrM",
+            "mac": "18:de:50:d9:ec:16",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "9": 0,
+                    "38": "memory",
+                    "42": "",
+                    "43": "",
+                    "44": "AAAC",
+                    "47": "flip"
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        }
+    ]
+}

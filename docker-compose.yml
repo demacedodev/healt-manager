@@ -1,0 +1,89 @@
+version: '3.9'
+
+services:
+  callers-db:
+    image: mariadb:10.11
+    container_name: health-manager-callers-db
+    network_mode: host
+    privileged: true
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: callers
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: apppass
+    volumes:
+      - ./callers-storage:/var/lib/mysql
+
+  callers-devices:
+    image: jasonacox/tinytuya
+    container_name: health-manager-callers-devices
+    network_mode: host
+    privileged: true
+    restart: unless-stopped
+    environment:
+      - DEBUGMODE=no
+      - HOST=192.168.10.1
+    volumes:
+      - ./callers-wizard/devices.json:/app/devices.json
+      - ./callers-wizard/tinytuya.json:/app/tinytuya.json
+
+  callers-py:
+    build:
+      context: ./callers-py
+      dockerfile: Dockerfile
+    container_name: health-manager-callers-py
+    network_mode: host
+    privileged: true
+    restart: unless-stopped
+    environment:
+      - DD_SERVICE=health-manager-callers-py
+      - DD_ENV=prod
+      - DD_VERSION=1.0.0
+      - DD_TRACE_ENABLED=true
+      - DD_AGENT_HOST=127.0.0.1
+      - DD_TRACE_AGENT_PORT=8126
+      - DD_APM_RECEIVER_SOCKET=/var/run/datadog/apm.socket
+    volumes:
+      - /var/run/datadog:/var/run/datadog
+    depends_on:
+      - dd-agent
+
+  dd-agent:
+    image: gcr.io/datadoghq/agent:7
+    container_name: dd-agent
+    restart: unless-stopped
+    network_mode: host
+    privileged: true
+    environment:
+      - DD_API_KEY=b2476fe8ab3b11ad1cccc1bf7bb0c7be
+      - DD_SITE=us5.datadoghq.com
+      - DD_ENV=prod
+      - DD_APM_ENABLED=true
+      - DD_APM_NON_LOCAL_TRAFFIC=true
+      - DD_APM_RECEIVER_SOCKET=/var/run/datadog/apm.socket
+      - DD_DOGSTATSD_SOCKET=/var/run/datadog/dsd.socket
+      - DD_DOGSTATSD_NON_LOCAL_TRAFFIC=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run/datadog:/var/run/datadog
+      - /proc/:/host/proc/:ro
+      - /sys/fs/cgroup/:/host/sys/fs/cgroup:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+
+  callers-go:
+    build:
+      context: ./callers-go
+      dockerfile: Dockerfile
+    container_name: health-manager-callers-go
+    network_mode: host
+    privileged: true
+    restart: unless-stopped
+    environment:
+      - DB_HOST=127.0.0.1
+      - DB_PORT=3306
+      - DB_NAME=myapp
+      - DB_USER=appuser
+      - DB_PASS=apppass
+    volumes:
+      - ./mariadb_data:/data

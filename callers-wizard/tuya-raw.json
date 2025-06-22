@@ -1,0 +1,2834 @@
+{
+    "result": [
+        {
+            "active_time": 1741389459,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725016583,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb272092da4a1cf9143y3y",
+            "ip": "45.178.194.187",
+            "lat": "-31.36",
+            "local_key": "EJUIr{4:W3fM9OXz",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N12",
+            "online": false,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750513124,
+            "uuid": "74b76b62ea829681",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389649,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1723310913,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "ebc735cb2e72a0cf7eh1sv",
+            "ip": "45.178.194.245",
+            "lat": "-31.36",
+            "local_key": "Wg;JkLNJY{Wk0E6t",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N02",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": true
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750513094,
+            "uuid": "d1655e4ec5849b83",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389552,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725016244,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb110f3ad8904120b1rif8",
+            "ip": "45.178.194.174",
+            "lat": "-31.36",
+            "local_key": "&6y]QqZ(SnAt.}A+",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N10",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": true
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750512659,
+            "uuid": "e1ee8c0e2ae8e954",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389364,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725017417,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb82c384a4f7896737ytjk",
+            "ip": "45.178.194.187",
+            "lat": "-31.35",
+            "local_key": "c}T[uG(TBkaHBl0!",
+            "lon": "-64.26",
+            "model": "WiFi Breaker",
+            "name": "N14",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750512621,
+            "uuid": "d0771900581d34ea",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1740781840,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1740781840,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb7b9e40a4e66cddf3nuyu",
+            "ip": "45.178.194.227",
+            "lat": "-31.36",
+            "local_key": "POeo]Zz._Y'lo5;w",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N20",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750512479,
+            "uuid": "726d899ce8d82f37",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389410,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725016750,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "ebe3677bd887981b7fan4g",
+            "ip": "45.178.194.187",
+            "lat": "-31.36",
+            "local_key": "VTgb]9o$2=&LpLFl",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N13",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750486170,
+            "uuid": "e443a22799b78fc7",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389663,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1723311282,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "ebe6ca2f1e66d57cb6bapc",
+            "ip": "45.178.194.174",
+            "lat": "-31.36",
+            "local_key": "/W<!;fiJD)XB_pA$",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N08",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750479131,
+            "uuid": "fd273fba01c6ae41",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741390021,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1723311134,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "ebfa1511cbb8310c752qwb",
+            "ip": "45.178.194.174",
+            "lat": "-31.36",
+            "local_key": "TjLpXR+&lu.?gLrM",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N06",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750472170,
+            "uuid": "670103e664f2e39c",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389667,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1723311316,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "ebece03d4e99fccfaaqzkh",
+            "ip": "45.178.194.245",
+            "lat": "-31.36",
+            "local_key": "}|8Gq.TE`x5_X0{J",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N09",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750472167,
+            "uuid": "1ed5b74b00b9de31",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389263,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725018936,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "ebb8309fc9ec2b0051fgix",
+            "ip": "45.178.194.174",
+            "lat": "-31.36",
+            "local_key": "!wF#BU}ux`|rSja]",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N16",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750472163,
+            "uuid": "884f5382a2b4b29c",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389208,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725019505,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb290a79e676104757432d",
+            "ip": "45.178.194.245",
+            "lat": "-31.36",
+            "local_key": "Txvrk=}p!qq0r:c=",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N18",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750472162,
+            "uuid": "b417742fe80712e8",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389666,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1723311298,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb6613e0b92c0e84c4bpek",
+            "ip": "45.178.194.245",
+            "lat": "-31.36",
+            "local_key": "86<s?#3!aG76}_K~",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N07",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750472159,
+            "uuid": "caf02575c18e902e",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389652,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1723306647,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eba19a1b9a3ae2b5admsnc",
+            "ip": "45.178.194.245",
+            "lat": "-31.36",
+            "local_key": "QPh`4!w{FXb`|B.b",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N01",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750471478,
+            "uuid": "4cc4a65d7a02ae2a",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389069,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725021055,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eba3ea53f05d39ec4bi988",
+            "ip": "45.178.194.174",
+            "lat": "-31.36",
+            "local_key": "M$0&:k]2E:bB(g[2",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N19",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750454061,
+            "uuid": "7128747baec3a825",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389313,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725018317,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb16981e7e847efc65x4o5",
+            "ip": "45.178.194.187",
+            "lat": "-31.36",
+            "local_key": "!<|NHqDhSe?`&22~",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N15",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750454058,
+            "uuid": "0f256d9ff1b85f37",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389159,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725019791,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb032700e2af6cef7bmaqh",
+            "ip": "45.178.194.174",
+            "lat": "-31.36",
+            "local_key": "@W9pQ+uhW@eWOQov",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N17",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750454049,
+            "uuid": "be62629abadba377",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389659,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1723311008,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb5097c7bef70ad335qex8",
+            "ip": "45.178.194.174",
+            "lat": "-31.36",
+            "local_key": "m|.J(freqR}4Z{L6",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N04",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750454047,
+            "uuid": "e0171ff2ee55fb0e",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389668,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1723310959,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "eb573b56fb709c3e4dopoy",
+            "ip": "45.178.194.174",
+            "lat": "-31.36",
+            "local_key": "R/0<f2NiR<LvWj)w",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N03",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750454031,
+            "uuid": "3320016385515bc8",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389652,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1723311079,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "ebb5c635a60702d522vvpp",
+            "ip": "45.178.194.245",
+            "lat": "-31.36",
+            "local_key": "^tl<R:``#N3(wTE$",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N05",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750454029,
+            "uuid": "fc8441c9fdbb9cb9",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1741389502,
+            "biz_type": 0,
+            "category": "tdq",
+            "create_time": 1725014533,
+            "icon": "smart/icon/ay1543221103243UgKoi/dec78beda0118192155cf3dd578e8693.png",
+            "id": "ebae1f3a38e9d7b9ad9ov4",
+            "ip": "45.178.194.187",
+            "lat": "-31.36",
+            "local_key": "nPGJkL*cyOqfyeEJ",
+            "lon": "-64.33",
+            "model": "WiFi Breaker",
+            "name": "N11",
+            "online": true,
+            "owner_id": "236171306",
+            "product_id": "1ctrc5jx88mtdh9w",
+            "product_name": "WiFi Breaker",
+            "status": [
+                {
+                    "code": "switch_1",
+                    "value": false
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "test_bit",
+                    "value": 0
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "relay_status",
+                    "value": "memory"
+                },
+                {
+                    "code": "random_time",
+                    "value": ""
+                },
+                {
+                    "code": "cycle_time",
+                    "value": ""
+                },
+                {
+                    "code": "switch_inching",
+                    "value": "AAAC"
+                },
+                {
+                    "code": "switch_type",
+                    "value": "flip"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1740780480932wARIw",
+            "update_time": 1750454029,
+            "uuid": "3305b4be4a207872",
+            "mapping": {
+                "1": {
+                    "code": "switch_1",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "9": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "test_bit",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 5,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "29": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "ov_cr",
+                            "ov_vol",
+                            "ov_pwr",
+                            "ls_cr",
+                            "ls_vol",
+                            "ls_pow"
+                        ],
+                        "maxlen": 6
+                    }
+                },
+                "38": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "42": {
+                    "code": "random_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "43": {
+                    "code": "cycle_time",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "44": {
+                    "code": "switch_inching",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "47": {
+                    "code": "switch_type",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "flip",
+                            "sync",
+                            "button"
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "success": true,
+    "t": 1750513155297,
+    "tid": "1f616fe04ea511f0a4ba2635a8e2ecea",
+    "file": {
+        "name": "tuya-raw.json",
+        "description": "Full raw list of Tuya devices.",
+        "account": "rfhgnmvj7mfdwp4rwh37",
+        "date": "2025-06-21T10:39:17.433352",
+        "tinytuya": "1.17.2"
+    }
+}

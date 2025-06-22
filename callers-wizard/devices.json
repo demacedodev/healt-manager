@@ -1,0 +1,5 @@
+{
+    "Error": "Error Response from Tuya Cloud",
+    "Err": "913",
+    "Payload": "Error from Tuya Cloud: Code 1106: 'permission deny'"
+}
