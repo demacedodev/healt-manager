@@ -3,12 +3,15 @@ package http
 import (
 	"callers-go/application"
 	"callers-go/domain"
-	"github.com/gin-gonic/gin"
+	"fmt"
 	"net/http"
+	"time"
+
+	"github.com/gin-gonic/gin"
 )
 
 const (
-	ALL = "all"
+	ALL = "ALL"
 )
 
 type (
@@ -38,7 +41,23 @@ func (h *Handlers) GetCallers(c *gin.Context) {
 		return
 	}
 
-	c.JSON(200, callers)
+	output := make([]map[string]any, len(callers))
+	for i, caller := range callers {
+		data := make(map[string]any)
+		data["id"] = caller.DeviceId
+		data["name"] = caller.DeviceName
+		data["location"] = fmt.Sprintf("🧭 %s 🏡 %s 🛏️ %s", caller.Location.Zone, caller.Location.Room, caller.Location.Bed)
+		data["isCalling"] = caller.DeviceStatus
+		data["startedAt"] = time.Unix(0, 0).UTC().UnixMilli()
+
+		if caller.DeviceStatus {
+			data["startedAt"] = time.Now().UnixMilli()
+		}
+
+		output[i] = data
+	}
+
+	c.JSON(200, output)
 }
 
 func (h *Handlers) CreateCallers(c *gin.Context) {

@@ -8,11 +8,12 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"os"
 	"os/signal"
 	"time"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -20,7 +21,7 @@ func main() {
 		Host:     os.Getenv("DB_HOST"),
 		Port:     os.Getenv("DB_PORT"),
 		User:     os.Getenv("DB_USER"),
-		Password: os.Getenv("DB_PASSWORD"),
+		Password: os.Getenv("DB_PASS"),
 		Database: os.Getenv("DB_NAME"),
 	})
 	if err != nil {
@@ -43,9 +44,9 @@ func main() {
 
 	router := gin.New()
 	router.Use(gin.Recovery())
-	router.GET("/health/callers", callers.GetCallers)
+	router.GET("/health/callers/status", callers.GetCallers)
 
-	cronLoad := time.NewTicker(30 * time.Second)
+	cronLoad := time.NewTicker(120 * time.Second)
 	defer cronLoad.Stop()
 	go Runner(cronLoad, "LoadDevices", func() error {
 		return task.LoadDevices()

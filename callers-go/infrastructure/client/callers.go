@@ -4,8 +4,9 @@ import (
 	"callers-go/domain"
 	"encoding/json"
 	"fmt"
-	"resty.dev/v3"
 	"time"
+
+	"resty.dev/v3"
 )
 
 type (
@@ -30,7 +31,7 @@ func NewClient(cfg *Config) domain.Client {
 	}
 }
 
-func (i *instance) GetDeviceStatus(s *domain.Search) (*domain.Device, error) {
+func (i *instance) GetDeviceStatus(s *domain.Search) (bool, error) {
 	url := fmt.Sprintf("%s/health/device/%s/status", i.callersBaseURL, s.DeviceId)
 
 	response, err := i.client.R().
@@ -38,30 +39,57 @@ func (i *instance) GetDeviceStatus(s *domain.Search) (*domain.Device, error) {
 		SetQueryParam("device_password", s.DevicePass).
 		Get(url)
 	if err != nil {
-		return nil, &domain.Error{
+		return false, &domain.Error{
 			Code:    "CONN-001",
 			Message: err.Error(),
 		}
 	}
 
 	if response.IsError() {
-		return nil, &domain.Error{
+		return false, &domain.Error{
 			Code:        "CONN-002",
 			Message:     "devices information not available",
 			RawResponse: response.String(),
 		}
 	}
 
+	//var status *domain.DeviceStatus
+	//if err = json.Unmarshal(response.Bytes(), &status); err != nil {
+	//	return false, &domain.Error{
+	//		Code:        "CONN-003",
+	//		Message:     err.Error(),
+	//		RawResponse: response.String(),
+	//	}
+	//}
+
+	//rawData, ok := status.DPS["1"]
+	//if !ok {
+	//	return false, &domain.Error{
+	//		Code:        "CONN-004",
+	//		Message:     "dps key not found",
+	//		RawResponse: response.String(),
+	//	}
+	//}
+
+	//var value bool
+	//if err = json.Unmarshal(rawData, &value); err != nil {
+	//	return false, &domain.Error{
+	//		Code:        "CONN-005",
+	//		Message:     "dps fail parsing",
+	//		RawResponse: response.String(),
+	//	}
+	//}
+
 	var d *domain.Device
 	if err = json.Unmarshal(response.Bytes(), &d); err != nil {
-		return nil, &domain.Error{
+		return false, &domain.Error{
 			Code:        "CONN-003",
 			Message:     err.Error(),
 			RawResponse: response.String(),
 		}
 	}
 
-	return d, nil
+	return d.DeviceStatus, nil
 }
 
 func (i *instance) DeviceRawInformation() (map[string]any, error) {

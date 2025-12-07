@@ -42,7 +42,6 @@ func (a *App) LoadDevices() error {
 			DeviceIp:       device["ip"].(string),
 			DevicePassword: device["key"].(string),
 			DeviceName:     device["name"].(string),
-			DeviceNickName: device["name"].(string),
 			Location: &domain.Location{
 				Room: "R1",
 				Bed:  "B1",
@@ -97,13 +96,17 @@ func (a *App) LoadDevices() error {
 }
 
 func (a *App) UpdateStatus() error {
-	devices, err := a.db.GetDevices(&domain.Search{DeviceZone: repository.FULL})
+	devices, err := a.mem.GetDevices(&domain.Search{DeviceZone: repository.FULL})
 	if err != nil {
 		return err
 	}
 
+	if len(devices) == 0 {
+		return nil
+	}
+
 	update := func(device domain.Device) domain.Device {
-		devicePY, errUpdate := a.client.GetDeviceStatus(&domain.Search{
+		status, errUpdate := a.client.GetDeviceStatus(&domain.Search{
 			DeviceIp:   device.DeviceIp,
 			DeviceId:   device.DeviceId,
 			DevicePass: device.DevicePassword,
@@ -113,7 +116,8 @@ func (a *App) UpdateStatus() error {
 			return device
 		}
 
-		device.DeviceStatus = devicePY.DeviceStatus
+		fmt.Printf("✅ [UpdateStatus] Device IP: %s - ID: %s - Name:%s - Status: %v\n", device.DeviceIp, device.DeviceId, device.DeviceName, status)
+		device.DeviceStatus = status
 		return device
 	}
 

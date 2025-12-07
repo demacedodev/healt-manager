@@ -14,7 +14,7 @@ type (
 	}
 
 	Client interface {
-		GetDeviceStatus(*Search) (*Device, error)
+		GetDeviceStatus(*Search) (bool, error)
 		DeviceRawInformation() (map[string]any, error)
 	}
 
@@ -41,6 +41,10 @@ type (
 		RawResponse    map[string]any `json:"raw_response,omitempty" gorm:"-"`
 		Location       *Location      `json:"location" gorm:"embedded"`
 		Error          *Error         `json:"error" gorm:"-"`
+	}
+
+	DeviceStatus struct {
+		DPS map[string]json.RawMessage `json:"dps"`
 	}
 
 	Location struct {
