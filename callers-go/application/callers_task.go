@@ -4,7 +4,10 @@ import (
 	"callers-go/domain"
 	"callers-go/infrastructure/repository"
 	"callers-go/pkg/async"
+	"encoding/base64"
+	"encoding/json"
 	"fmt"
+	"strings"
 )
 
 type (
@@ -14,80 +17,54 @@ type (
 func NewApp(cfg *Config) domain.Manager {
 	return &app{
 		client: cfg.Client,
-		db:     cfg.Storage,
 		mem:    cfg.Cache,
 	}
 }
 
 func (a *App) LoadDevices() error {
-	tinyDevices, err := a.client.DeviceRawInformation()
+	devices, err := a.client.DeviceRawInformation()
 	if err != nil {
 		return err
 	}
 
-	fmt.Printf("☢️ [LoadDevices] Devices Network Found: %d\n", len(tinyDevices))
+	fmt.Printf("☢️ [LoadDevices] Devices Network Found: %d\n", len(devices))
 
-	deviceIDs := make([]string, 0)
-	networkDevices := make([]domain.Device, 0)
+	foundDevices := make([]domain.Device, 0)
 
-	for _, tinyDevice := range tinyDevices {
-		device, ok := tinyDevice.(map[string]any)
-		if !ok {
-			fmt.Printf("🔴 [LoadDevices] Empty Map Tiny Devices: %v\n", tinyDevices)
+	for _, device := range devices {
+		if !strings.Contains(device.EntityId, "light.") {
 			continue
 		}
 
-		newDevice := domain.Device{
-			DeviceId:       device["id"].(string),
-			DeviceIp:       device["ip"].(string),
-			DevicePassword: device["key"].(string),
-			DeviceName:     device["name"].(string),
-			Location: &domain.Location{
-				Room: "R1",
-				Bed:  "B1",
-				Zone: "ALL",
-			},
+		d := ParseDevice(device)
+		if d == nil {
+			fmt.Printf("🔴 [LoadDevices] cannot Decode Device: %v\n", device)
+			continue
 		}
 
-		networkDevices = append(networkDevices, newDevice)
-		deviceIDs = append(deviceIDs, newDevice.DeviceId)
+		var state bool
+		if strings.EqualFold(device.State, "on") {
+			state = true
+		}
+
+		foundDevices = append(foundDevices, domain.Device{
+			DeviceId:     device.EntityId,
+			DeviceName:   d.Name,
+			DeviceStatus: state,
+			Location: &domain.Location{
+				Room: d.Room,
+				Bed:  d.Bed,
+				Zone: d.Zone,
+			},
+		})
 	}
 
-	if len(networkDevices) == 0 {
-		fmt.Println("❌ [LoadDevices] Empty Storage Devices")
+	if len(foundDevices) == 0 {
+		fmt.Println("❌ [LoadDevices] Empty Configured Devices")
 		return nil
 	}
 
-	dbDevices, err := a.db.GetDevices(&domain.Search{DeviceIDs: deviceIDs})
-	if err != nil {
-		return err
-	}
-
-	var storedDevices = make(map[string]domain.Device)
-	for _, dbDevice := range dbDevices {
-		storedDevices[dbDevice.DeviceId] = dbDevice
-	}
-
-	noConfiguratedDevices := make([]domain.Device, 0)
-	for i := 0; i < len(networkDevices); i++ {
-		auxDevice, ok := storedDevices[networkDevices[i].DeviceId]
-		if !ok {
-			fmt.Println("🟡 [LoadDevices] Device Not Configurated Will Be Loaded" + networkDevices[i].String())
-			noConfiguratedDevices = append(noConfiguratedDevices, networkDevices[i])
-			continue
-		}
-
-		networkDevices[i].DeviceNickName = auxDevice.DeviceNickName
-		networkDevices[i].Location.Room = auxDevice.Location.Room
-		networkDevices[i].Location.Bed = auxDevice.Location.Bed
-		networkDevices[i].Location.Zone = auxDevice.Location.Zone
-	}
-
-	if err = a.db.CreateDevices(noConfiguratedDevices); err != nil {
-		fmt.Printf("❌ [LoadDevices] Cannot Create Storage Devices: %v\n", err)
-	}
-
-	if err = a.mem.CreateDevices(networkDevices); err != nil {
+	if err = a.mem.CreateDevices(foundDevices); err != nil {
 		fmt.Printf("❌ [LoadDevices] Cannot Update Mem Devices: %v\n", err)
 		return err
 	}
@@ -164,4 +141,19 @@ func (a *App) UpdateStatus() error {
 	}
 
 	return nil
+}
+
+func ParseDevice(device domain.RawDevice) *domain.HaDevice {
+	decoded, err := base64.StdEncoding.DecodeString(device.Attributes.FriendlyName)
+	if err != nil {
+		return nil
+	}
+
+	var d *domain.HaDevice
+	err = json.Unmarshal(decoded, &d)
+	if err != nil {
+		return nil
+	}
+
+	return d
 }

@@ -17,28 +17,16 @@ import (
 )
 
 func main() {
-	db, err := repository.NewPersistentStorage(&repository.Config{
-		Host:     os.Getenv("DB_HOST"),
-		Port:     os.Getenv("DB_PORT"),
-		User:     os.Getenv("DB_USER"),
-		Password: os.Getenv("DB_PASS"),
-		Database: os.Getenv("DB_NAME"),
-	})
-	if err != nil {
-		panic(err)
-	}
-
 	cfg := &application.Config{
 		Client: client.NewClient(&client.Config{
-			CallersBaseURL: "http://127.0.0.1:8081",
-			DevicesBaseURL: "http://127.0.0.1:8888",
-			Timeout:        1200 * time.Second,
+			HaBaseURL:  os.Getenv("HA_BASE_URL"),
+			HaApiToken: os.Getenv("HA_API_TOKEN"),
+			Timeout:    1200 * time.Second,
 		}),
-		Storage: db,
-		Cache:   repository.NewMemoryStorage(),
+		Cache: repository.NewMemoryStorage(),
 	}
 
-	task := application.NewTask(cfg)
+	//task := application.NewTask(cfg)
 	app := application.NewApp(cfg)
 	callers := presentation.NewHandlers(app)
 
@@ -46,17 +34,17 @@ func main() {
 	router.Use(gin.Recovery())
 	router.GET("/health/callers/status", callers.GetCallers)
 
-	cronLoad := time.NewTicker(120 * time.Second)
-	defer cronLoad.Stop()
-	go Runner(cronLoad, "LoadDevices", func() error {
-		return task.LoadDevices()
-	})
+	//cronLoad := time.NewTicker(5 * time.Second)
+	//defer cronLoad.Stop()
+	//go Runner(cronLoad, "LoadDevices", func() error {
+	//	return task.LoadDevices()
+	//})
 
-	cronUpdate := time.NewTicker(1 * time.Second)
-	defer cronUpdate.Stop()
-	go Runner(cronUpdate, "UpdateDevices", func() error {
-		return task.UpdateStatus()
-	})
+	//cronUpdate := time.NewTicker(1 * time.Second)
+	//defer cronUpdate.Stop()
+	//go Runner(cronUpdate, "UpdateDevices", func() error {
+	//	return task.UpdateStatus()
+	//})
 
 	srv := &http.Server{
 		Addr:    ":8080",

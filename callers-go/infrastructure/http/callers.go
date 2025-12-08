@@ -5,6 +5,7 @@ import (
 	"callers-go/domain"
 	"fmt"
 	"net/http"
+	"strings"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -41,8 +42,13 @@ func (h *Handlers) GetCallers(c *gin.Context) {
 		return
 	}
 
-	output := make([]map[string]any, len(callers))
-	for i, caller := range callers {
+	output := make([]map[string]any, 0)
+	for _, caller := range callers {
+		if !strings.EqualFold(zone, caller.Location.Zone) {
+			c.JSON(http.StatusOK, output)
+			return
+		}
+
 		data := make(map[string]any)
 		data["id"] = caller.DeviceId
 		data["name"] = caller.DeviceName
@@ -54,10 +60,10 @@ func (h *Handlers) GetCallers(c *gin.Context) {
 			data["startedAt"] = time.Now().UnixMilli()
 		}
 
-		output[i] = data
+		output = append(output, data)
 	}
 
-	c.JSON(200, output)
+	c.JSON(http.StatusOK, output)
 }
 
 func (h *Handlers) CreateCallers(c *gin.Context) {

@@ -3,6 +3,7 @@ package domain
 import (
 	"context"
 	"encoding/json"
+	"time"
 )
 
 type (
@@ -15,7 +16,7 @@ type (
 
 	Client interface {
 		GetDeviceStatus(*Search) (bool, error)
-		DeviceRawInformation() (map[string]any, error)
+		DeviceRawInformation() ([]RawDevice, error)
 	}
 
 	Repository interface {
@@ -57,6 +58,35 @@ type (
 		Code        string `json:"code"`
 		Message     string `json:"message"`
 		RawResponse string `json:"raw_response,omitempty"`
+	}
+
+	RawDevice struct {
+		EntityId   string `json:"entity_id"`
+		State      string `json:"state"`
+		Attributes struct {
+			SupportedColorModes []string    `json:"supported_color_modes"`
+			ColorMode           interface{} `json:"color_mode"`
+			OffWithTransition   bool        `json:"off_with_transition"`
+			OffBrightness       interface{} `json:"off_brightness"`
+			Icon                string      `json:"icon"`
+			FriendlyName        string      `json:"friendly_name"`
+			SupportedFeatures   int         `json:"supported_features"`
+		} `json:"attributes"`
+		LastChanged  time.Time `json:"last_changed"`
+		LastReported time.Time `json:"last_reported"`
+		LastUpdated  time.Time `json:"last_updated"`
+		Context      struct {
+			Id       string      `json:"id"`
+			ParentId interface{} `json:"parent_id"`
+			UserId   interface{} `json:"user_id"`
+		} `json:"context"`
+	}
+
+	HaDevice struct {
+		Name string `json:"name"`
+		Zone string `json:"zone"`
+		Room string `json:"room"`
+		Bed  string `json:"bed"`
 	}
 )
 

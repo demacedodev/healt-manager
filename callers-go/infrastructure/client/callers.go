@@ -4,6 +4,8 @@ import (
 	"callers-go/domain"
 	"encoding/json"
 	"fmt"
+	"io"
+	"net/http"
 	"time"
 
 	"resty.dev/v3"
@@ -12,13 +14,15 @@ import (
 type (
 	instance struct {
 		callersBaseURL string
-		devicesBaseURL string
+		HaBaseURL      string
+		HaApiToken     string
 		client         *resty.Client
 	}
 
 	Config struct {
 		CallersBaseURL string
-		DevicesBaseURL string
+		HaBaseURL      string
+		HaApiToken     string
 		Timeout        time.Duration
 	}
 )
@@ -26,7 +30,8 @@ type (
 func NewClient(cfg *Config) domain.Client {
 	return &instance{
 		callersBaseURL: cfg.CallersBaseURL,
-		devicesBaseURL: cfg.DevicesBaseURL,
+		HaBaseURL:      cfg.HaBaseURL,
+		HaApiToken:     cfg.HaApiToken,
 		client:         resty.New().SetTimeout(cfg.Timeout),
 	}
 }
@@ -92,31 +97,37 @@ func (i *instance) GetDeviceStatus(s *domain.Search) (bool, error) {
 	return d.DeviceStatus, nil
 }
 
-func (i *instance) DeviceRawInformation() (map[string]any, error) {
-	url := fmt.Sprintf("%s/devices", i.devicesBaseURL)
+func (i *instance) DeviceRawInformation() ([]domain.RawDevice, error) {
+	url := fmt.Sprintf("%s/api/states", i.HaBaseURL)
 
-	response, err := i.client.R().Get(url)
+	method := "GET"
+
+	client := &http.Client{}
+	req, err := http.NewRequest(method, url, nil)
+
 	if err != nil {
-		return nil, &domain.Error{
-			Code:    "CONN-001",
-			Message: err.Error(),
-		}
+		fmt.Println(err)
+		return nil, err
+	}
+	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", i.HaApiToken))
+
+	res, err := client.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer res.Body.Close()
+
+	body, err := io.ReadAll(res.Body)
+	if err != nil {
+		return nil, err
 	}
 
-	if response.IsError() {
-		return nil, &domain.Error{
-			Code:        "CONN-002",
-			Message:     "devices information not available",
-			RawResponse: response.String(),
-		}
-	}
-
-	var r map[string]any
-	if err = json.Unmarshal(response.Bytes(), &r); err != nil {
+	var r []domain.RawDevice
+	if err = json.Unmarshal(body, &r); err != nil {
 		return nil, &domain.Error{
 			Code:        "CONN-003",
 			Message:     err.Error(),
-			RawResponse: response.String(),
+			RawResponse: string(body),
 		}
 	}
 
